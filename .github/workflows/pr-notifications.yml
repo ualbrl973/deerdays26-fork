@@ -80,8 +80,6 @@ jobs:
           curl -s -X POST "$DISCORD_WEBHOOK" \
             -H "Content-Type: application/json" \
             -d '{
-              "username": "GitHub PRs",
-              "avatar_url": "https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png",
               "embeds": [{
                 "title": "${{ steps.pr_status.outputs.EMOJI }} ${{ steps.pr_status.outputs.TITLE }}: #${{ github.event.pull_request.number }} — ${{ github.event.pull_request.title }}",
                 "url": "${{ github.event.pull_request.html_url }}",
