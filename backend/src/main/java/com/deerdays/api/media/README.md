@@ -11,13 +11,10 @@ Gestiona la subida, almacenamiento y recuperación de archivos multimedia (imág
 
 ## Tipos de archivo soportados
 
-- Imágenes: `jpg`, `png`, `webp`, `gif`
-- Documentos: `pdf`
+- Imágenes: `jpg`, `png`, `webp` (máx. 5 MB, 1 por post)
 
 ## Endpoints principales
 
-| Método | Ruta                    | Descripción                              |
-|--------|-------------------------|------------------------------------------|
-| POST   | `/media/upload`         | Subir un archivo, devuelve su URL        |
-| GET    | `/media/{filename}`     | Recuperar un archivo por nombre          |
-| DELETE | `/media/{filename}`     | Eliminar un archivo                      |
+| Método | Ruta                   | Descripción                                   |
+| ------ | ---------------------- | --------------------------------------------- |
+| POST   | `/api/upload/image`    | Subir imagen, devuelve URL pública            |

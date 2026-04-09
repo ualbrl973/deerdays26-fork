@@ -1,4 +1,4 @@
-# Módulo de Asignaturas (`course`)
+# Módulo de Asignaturas (`courses`)
 
 Gestiona el catálogo de asignaturas universitarias disponibles en la plataforma.
 
@@ -16,7 +16,10 @@ Gestiona el catálogo de asignaturas universitarias disponibles en la plataforma
 
 ## Endpoints principales
 
-| Método | Ruta                  | Descripción                                                              |
-| ------ | --------------------- | ------------------------------------------------------------------------ |
-| GET    | `/api/courses`        | Listar/buscar asignaturas (filtros: `q`, `degree`, `faculty`, `year`, `semester`, `type`) |
-| GET    | `/api/courses/{id}`   | Detalle de asignatura con grupos y sesiones                              |
+| Método | Ruta            | Descripción                             |
+| ------ | --------------- | --------------------------------------- |
+| GET    | `/courses`      | Listado paginado con búsqueda y filtros |
+| GET    | `/courses/{id}` | Detalle de una asignatura               |
+| POST   | `/courses`      | Crear asignatura _(admin)_              |
+| PATCH  | `/courses/{id}` | Editar asignatura _(admin)_             |
+| DELETE | `/courses/{id}` | Eliminar asignatura _(admin)_           |

@@ -16,9 +16,10 @@ Gestiona el acceso a la plataforma: registro, inicio de sesión y emisión de to
 
 ## Endpoints principales
 
-| Método | Ruta                   | Descripción                          |
-|--------|------------------------|--------------------------------------|
-| POST   | `/auth/register`       | Registro de nuevo usuario            |
-| POST   | `/auth/login`          | Inicio de sesión, devuelve JWT       |
-| POST   | `/auth/refresh`        | Renovación del token de acceso       |
-| POST   | `/auth/logout`         | Cierre de sesión                     |
+| Método | Ruta                      | Descripción                          |
+| ------ | ------------------------- | ------------------------------------ |
+| POST   | `/api/auth/register`      | Crear cuenta                         |
+| POST   | `/api/auth/verify-email`  | Verificar OTP                        |
+| POST   | `/api/auth/login`         | Login email + password, devuelve JWT |
+| POST   | `/api/auth/refresh`       | Renovar access token                 |
+| POST   | `/api/auth/logout`        | Invalidar refresh token              |

@@ -23,10 +23,7 @@ Gestiona los perfiles de usuario, sus preferencias y el proceso de verificación
 
 ## Endpoints principales
 
-| Método | Ruta                          | Descripción                              |
-|--------|-------------------------------|------------------------------------------|
-| GET    | `/users/me`                   | Perfil del usuario autenticado           |
-| PATCH  | `/users/me`                   | Actualizar perfil propio                 |
-| PATCH  | `/users/me/password`          | Cambiar contraseña                       |
-| POST   | `/users/me/verify`            | Iniciar proceso de verificación          |
-| GET    | `/users/{id}`                 | Ver perfil público de otro usuario       |
+| Método | Ruta                | Descripción                          |
+| ------ | ------------------- | ------------------------------------ |
+| GET    | `/api/profile/me`   | Perfil del usuario autenticado       |
+| PUT    | `/api/profile/me`   | Actualizar alias                     |

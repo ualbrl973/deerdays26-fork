@@ -17,9 +17,7 @@ Permite a los estudiantes valorar y comentar asignaturas para orientar a futuros
 
 ## Endpoints principales
 
-| Método | Ruta                               | Descripción                           |
-|--------|------------------------------------|---------------------------------------|
-| GET    | `/reviews/subject/{subjectId}`     | Listar reseñas de una asignatura      |
-| POST   | `/reviews/subject/{subjectId}`     | Crear reseña sobre una asignatura     |
-| PATCH  | `/reviews/{id}`                    | Editar reseña propia                  |
-| DELETE | `/reviews/{id}`                    | Eliminar reseña propia                |
+| Método | Ruta               | Descripción                                               |
+| ------ | ------------------ | --------------------------------------------------------- |
+| GET    | `/api/reviews`     | Reseñas de una asignatura con agregados (`?courseId=`)    |
+| POST   | `/api/reviews`     | Crear reseña (1 por usuario por asignatura)               |
